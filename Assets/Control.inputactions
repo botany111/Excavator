@@ -15,9 +15,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "TopRotation",
+                    "name": "Joystick Left",
                     "type": "Value",
                     "id": "111ce363-fb86-43c8-a9c2-3425b9e42700",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Joystick Right",
+                    "type": "Value",
+                    "id": "b17352e9-91ba-4568-bea5-36d2afb2ff0a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -87,7 +96,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TopRotation",
+                    "action": "Joystick Left",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -98,7 +107,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TopRotation",
+                    "action": "Joystick Left",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -109,7 +118,84 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TopRotation",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "86eda7c0-2dfa-48f1-82cb-703d8cdfaa97",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "dd543d6d-2b75-48b2-b8b3-a760c016a93c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "64c1137c-4e21-4c2e-851f-c3b4e1b6dd0f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Left",
+                    "id": "40b6eec6-29da-4bb0-b90e-bf7a8929ef0d",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "ea469da4-39f3-46d5-a41f-00144bc57ed1",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "c62d6493-4974-439f-b34f-9ebe8afaaa78",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2a7580f4-a400-4d48-ba5c-c373d3529dc3",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

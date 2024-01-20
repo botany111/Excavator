@@ -112,9 +112,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Left",
+                    "id": "2e1fcdfb-20d4-4842-a12d-1ebec19138ca",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Right",
                     "id": "44bea5b2-a0d4-4a04-a50c-c3d4c5c27078",
                     "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "70992e29-5100-4fa7-939a-1c997aa00b11",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -134,9 +156,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "up",
+                    "id": "9d39f623-7cb9-4832-8c55-df28a241e90c",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "down",
                     "id": "dd543d6d-2b75-48b2-b8b3-a760c016a93c",
                     "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Left",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "c6afad46-26f8-4fcf-9212-7c832cf5b910",
+                    "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -167,9 +211,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Left",
+                    "id": "1d28fcbb-8690-48bd-b479-c09c5514f87a",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Right",
                     "id": "ea469da4-39f3-46d5-a41f-00144bc57ed1",
                     "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "66877a0e-c424-4f26-bcc1-cd472f25b0eb",
+                    "path": "<Gamepad>/rightStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -189,9 +255,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "up",
+                    "id": "827cd886-6fb7-493c-8933-578782bf441c",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "down",
                     "id": "2a7580f4-a400-4d48-ba5c-c373d3529dc3",
                     "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Joystick Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0e0dfd19-9e03-4640-bc4e-780a510f2f40",
+                    "path": "<Gamepad>/rightStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

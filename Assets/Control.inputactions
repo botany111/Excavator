@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Tracks1",
+                    "name": "TopRotation",
                     "type": "Value",
                     "id": "111ce363-fb86-43c8-a9c2-3425b9e42700",
                     "expectedControlType": "",
@@ -39,7 +39,7 @@
                 {
                     "name": "Up",
                     "id": "9f47f86e-b9d4-4070-a36f-c3d28cdd06f1",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/t",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -48,9 +48,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Down",
+                    "name": "right",
                     "id": "80b7a2cf-a04c-4903-8a16-8c7ba0df05d1",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -59,9 +59,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Left",
+                    "name": "down",
                     "id": "4f704bd8-42bc-4938-b34c-349b28e33a5e",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/g",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -70,9 +70,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Right",
+                    "name": "left",
                     "id": "c6c1dcd9-5696-43eb-9447-339204bd70c9",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/h",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -87,29 +87,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Tracks1",
+                    "action": "TopRotation",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "Left",
                     "id": "479871c6-8d6a-4c47-8472-c9920ddf15c7",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Tracks1",
+                    "action": "TopRotation",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "Right",
                     "id": "44bea5b2-a0d4-4a04-a50c-c3d4c5c27078",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Tracks1",
+                    "action": "TopRotation",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

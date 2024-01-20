@@ -16,49 +16,52 @@ public class Tracks : MonoBehaviour
 
     void Update()
     {
-
-        // 根据输入旋转履带
-        RotateTracks();
         MoveTracks();
         TrackScroll();
         offset = Time.time * scrollSpeed;
-
     }
 
     public void MoveTracks()
     {
-        float movementAmount = moveVector.y * moveSpeed * Time.deltaTime;
-        transform.Translate(Vector3.forward * movementAmount);
-
-        
-    }
-    public void RotateTracks()
-    {
-        if(moveVector != Vector2.zero)
+        //前進
+        if(moveVector.x > 0 && moveVector.y > 0)
         {
-            float rotationAmount = moveVector.x * rotationSpeed * Time.deltaTime;
+            float movementAmount = moveVector.y * moveSpeed * Time.deltaTime;
+            transform.Translate(Vector3.forward * movementAmount);
+        }
+
+        //後退
+        if (moveVector.x < 0 && moveVector.y < 0)
+        {
+            float movementAmount = moveVector.y * moveSpeed * Time.deltaTime;
+            transform.Translate(Vector3.forward * movementAmount);
+        }
+
+        //左轉
+        if(moveVector.x == 0 && moveVector.y != 0)
+        {
+            float rotationAmount = moveVector.y * rotationSpeed * Time.deltaTime;
+            transform.Rotate(Vector3.up, rotationAmount);
+        }
+
+        //右轉
+        if (moveVector.x != 0 && moveVector.y == 0)
+        {
+            float rotationAmount = moveVector.x * -rotationSpeed * Time.deltaTime;
             transform.Rotate(Vector3.up, rotationAmount);
         }
     }
-
     public void TrackScroll()
     {
-        if(moveVector.x < 0)
+        if(moveVector.x != 0)
         {
             Rrend.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
         }
 
-        if (moveVector.x > 0)
+        if (moveVector.y != 0)
         {
             Lrend.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
-        }
-
-        if(moveVector.y != 0)
-        {
-            Rrend.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
-            Lrend.material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
-        }
-       
+        }     
         
     }
 

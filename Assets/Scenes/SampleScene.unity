@@ -345,20 +345,6 @@ MonoBehaviour:
   Lrend: {fileID: 8062693335253482395}
   Rrend: {fileID: 4439527233850285603}
   offset: 0
---- !u!114 &919132148534231557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148534231552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b064f67e11315f4ebc047f3ce2bc2f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 5
-  rotate: {fileID: 2616887860532559214}
 --- !u!114 &919132148534231559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,11 +386,41 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fe30cd97-99e5-4de5-b144-bfb515d29cae
     m_ActionName: PlayerExcavator/Tracks[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 919132148534231561}
+        m_TargetAssemblyTypeName: TopRotation, Assembly-CSharp
+        m_MethodName: Rotation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 111ce363-fb86-43c8-a9c2-3425b9e42700
+    m_ActionName: PlayerExcavator/Tracks1[/Keyboard/q,/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerExcavator
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &919132148534231561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148534231552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f14377df2ee1b479ea721fdc3e7aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 20
+  topRotation: {fileID: 2616887860532559214}
 --- !u!1 &2616887860532559214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8971798801303306839, guid: 863949fac00b5eb4a86ea75653ab4a89, type: 3}

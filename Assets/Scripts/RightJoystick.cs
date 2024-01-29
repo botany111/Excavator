@@ -19,23 +19,38 @@ public class RightJoystick : MonoBehaviour
     public GameObject bucket;
     void Update()
     {
+        Debug.LogError(bucket.transform.rotation.x);
+
         Boom();
+        
+        
         Bucket();
     }
 
     //¤jÁu
     public void Boom()
     {
-        float BoomAmount = RightJoystickVector.y * boomSpeed * Time.deltaTime;
+        if (RightJoystickVector.y == -1 && boom.transform.rotation.x > -0.30 || RightJoystickVector.y == 1 && boom.transform.rotation.x < 0.1)
+        {
+            float BoomAmount = RightJoystickVector.y * boomSpeed * Time.deltaTime;
 
-        boom.transform.Rotate(Vector3.right * BoomAmount);
+            boom.transform.Rotate(Vector3.right * BoomAmount);
+        }
+
     }
 
     //«õ¤æ
     public void Bucket()
     {
-        float BoomAmount = RightJoystickVector.x* bicketSpeed * Time.deltaTime;
-        bucket.transform.Rotate(Vector3.left * BoomAmount);
+        if(RightJoystickVector.x == -1 && bucket.transform.rotation.x < 0.6 || RightJoystickVector.x == 1 && bucket.transform.rotation.x > -0.7)
+        {
+            float BoomAmount = RightJoystickVector.x * bicketSpeed * Time.deltaTime;
+            bucket.transform.Rotate(Vector3.left * BoomAmount);
+        }else if(RightJoystickVector.x == 1 )
+        {
+            
+        }
+        
     }
 
     public void _RightJoystick(InputAction.CallbackContext ctx)

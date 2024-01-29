@@ -22,6 +22,9 @@ public class LeftJoystick : MonoBehaviour
     {
         TopRotation();
         Dipper();
+
+        Debug.LogError(dipper.transform.rotation.x);
+
     }
 
     //上迴旋體旋轉
@@ -39,9 +42,15 @@ public class LeftJoystick : MonoBehaviour
 
     public void Dipper()
     {
-        float rotationAmount = LeftJoystickVector.y * moveSpeed * Time.deltaTime;
 
-        dipper.transform.Rotate(Vector3.left, rotationAmount);
+        if(LeftJoystickVector.y == -1 && dipper.transform.rotation.x < 0.4 || LeftJoystickVector.y == 1 && dipper.transform.rotation.x > -0.65 )
+        {
+            float rotationAmount = LeftJoystickVector.y * moveSpeed * Time.deltaTime;
+
+            dipper.transform.Rotate(Vector3.left, rotationAmount);
+        }
+            
+        
     }
     public void _LeftJoystick(InputAction.CallbackContext ctx)
     {
